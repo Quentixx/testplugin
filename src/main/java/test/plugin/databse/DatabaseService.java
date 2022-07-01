@@ -40,7 +40,7 @@ public class DatabaseService {
     }
 
     private static class PingRecorder {
-        long valStart, valEnd;
+        long valStart;
         PingRecorder() { valStart = System.currentTimeMillis(); }
         long end()  { return System.currentTimeMillis() - valStart; }
     }
